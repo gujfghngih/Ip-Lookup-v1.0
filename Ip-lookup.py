@@ -89,7 +89,7 @@ def quit():
                 exit()
             else:
                 os.system("clear")
-                print menu
+                print (menu)
                 select()
            
 def  select():

@@ -82,7 +82,7 @@ menu = '''\033[0m
     {0}--INSTALL & UPDATE
     {99}-Exit                                                                                                                   
  '''
-print menu
+print (menu)
 def quit():
             con = raw_input('Continue [Y/n] -> ')
             if con[0].upper() == 'N':
@@ -111,10 +111,6 @@ def  select():
       quit()
     elif choice == 0:
 	  os.system("clear")
-	  print("This tool is only available for Linux and similar systems  ")
-	  os.system("git clone https://github.com/Manisso/Crips.git")
-	  os.system("cd Crips && sudo bash ./update.sh")
-	  os.system("crips")
     elif choice == 2:
       d3 = raw_input('Enter IP Or Domain : ')
       os.system("clear")

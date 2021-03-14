@@ -89,7 +89,6 @@ def quit():
                 exit()
             else:
                 os.system("clear")
-                print logo
                 print menu
                 select()
            

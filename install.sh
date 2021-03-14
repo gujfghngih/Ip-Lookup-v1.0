@@ -24,10 +24,10 @@ fi
  echo "";
  git clone https://github.com/gujfghngih/IP.git /usr/share/doc/IP;
  echo "#!/bin/bash 
- python /usr/share/doc/IP/ip.py" '${1+"$@"}' > ip;
- chmod +x crips;
- sudo cp crips /usr/bin/;
- rm crips;
+ python /usr/share/doc/IP/Ip lookup.py" '${1+"$@"}' > ip;
+ chmod +x Ip lookup;
+ sudo cp Ip lookups /usr/bin/;
+ rm Ip lookup;
 
 
 if [ -d "/usr/share/doc/IP" ] ;

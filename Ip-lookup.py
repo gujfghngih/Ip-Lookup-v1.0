@@ -109,7 +109,7 @@ def  select():
       print("")
       quit()
     elif choice == 0:
-	  os.system("clear")
+	os.system("clear")
     elif choice == 2:
       d3 = raw_input('Enter IP Or Domain : ')
       os.system("clear")

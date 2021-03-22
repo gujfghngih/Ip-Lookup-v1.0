@@ -1,13 +1,27 @@
-import os, sys, time
-import smtplib
-import random
-from time import sleep as timeout
-import socket
-os.system("cls")
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+from rich.console import Console
+from pyfiglet import figlet_format
+from termcolor import colored
+from time import sleep 
+from instainfo import instainfo
+from iplook import iplook
+from clear import clear
+from numscan import numscan
+from ketik import ketik
+from ip import ip
+from cipher import cyb
+
+cyan = ("\033[1m\033[36m")
+mawar = ("\033[31;1m")
+white = ("\033[37m")
+console = Console()
 def virus():
     clear = "\x1b[0m"
     colors = [36, 32, 34, 35, 31, 37]
-    x ='''
+
+    x = colored('''
 …………………▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 ……………▄▄█▓▓▓▒▒▒▒▒▒▒▒▒▒▓▓▓▓█▄▄
 …………▄▀▀▓▒░░░░░░░░░░░░░░░░▒▓▓▀▄
@@ -45,15 +59,12 @@ def virus():
 ………………….█▓▓▒▒▓▀▀███▀▀▒▒▓▓█
 ……………………▀█▓▓▓▓▒▒▒▒▓▓▓▓█▀
 ………………………..▀▀██▓▓▓▓██▀
-     '''
-    for N, line in enumerate( x.split( "\n" ) ):
-        sys.stdout.write( " \x1b[1;%dm%s%s\n " % (random.choice( colors ), line, clear) )
-        time.sleep( 0.05 )
-virus()
-mawar = ("\033[31;1m")
-
+     ''' , 'red')
+   for N, line in enumerate( x.split( "\n" ) ):
+        print(line)
+        sleep( 0.05 )
 option = input('† Eternal Demon † || † I-Anonymous-I †: ~#  ')
 
-if option == '1':
-   os.system("cls")
-   os.system("python3 Iplookup.py")
+ if option == '1':
+        iplookup()
+virus()

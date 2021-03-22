@@ -1,13 +1,8 @@
 # -*- coding: utf-8 -*-
-
-import sys
-import random
-import time
-import os
-import urllib2
-import json
-
-
+ def iplook():
+    from clear import clear
+    from start import virus
+    import os
 def draw():
     os.system("clear")
     print('''
@@ -135,11 +130,7 @@ if option1 == 1:
         os.system("clear")
         print("File : index.html?q=" +d3)
         print("\033[0m")
-        quit()
-        quit()
-elif option1 == 99:
-    os.system("clear")
-    os.system("python3 Menu.py")
-elif option1 == 99:
-    os.system("clear")
-    os.system("python3 Menu.py")
+          quit()
+    elif option1 == '99':
+        clear()
+        virus()
